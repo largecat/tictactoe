@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(177, 160, 160);
+}
+
+.main {
+	background-color: rgb(177, 160, 160);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: lighter;
+	padding: 30px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.modal {
+	background-color: rgb(177, 160, 160);
+	height: 100px;
+	width: 200px;
+	position: absolute;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.display {
+	margin-top: 10px;
+}
+
+#boardContainer {
+	font-size: 70px;
+	font-weight: lighter;
+	height: 300px;
+	width: 300px;
+	margin: 20px;
+	background-color: bisque;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: rgb(185, 247, 241);
+	color: rgb(75, 63, 63);
+	padding: 5px 15px;
+	margin: 5px;
+	width: 80px;
+	border-radius: 10px;
+	border-style: none;
+}
+
+button:hover {
+	background-color: aquamarine;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cell:hover {
+	background-color: rgba(128, 128, 128, 0.425);
+}
+
+.cell:nth-child(-n + 3) {
+	border-top: none;
+	border-bottom: none;
+}
+
+.cell:nth-child(3n) {
+	border-right: none;
+	border-left: none;
+}
+
+.cell:nth-child(3n + 1) {
+	border-left: none;
+	border-right: none;
+}
+.cell:nth-child(n + 3) {
+	border-bottom: none;
+}
